@@ -26,6 +26,6 @@ production:
   encoding: unicode
   pool: 5
   database: kadai_84mw
-username: kadai_84mw_user
-password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
-url: <%= ENV['DATABASE_URL'] %>
+  username: kadai_84mw_user
+  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
