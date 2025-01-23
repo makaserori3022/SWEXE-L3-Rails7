@@ -22,4 +22,10 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adaper: postgresql
+  encoding: unicode
+  pool: 5
+  database: render_ogto
+username: render_ogto_user
+password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+url: <%= ENV['DATABASE_URL'] %>
